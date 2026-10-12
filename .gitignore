@@ -218,3 +218,46 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+
+
+# Terraform local state and working directory
+.terraform/
+*.tfstate
+*.tfstate.*
+crash.log
+crash.*.log
+
+# Plan files (can contain sensitive values)
+*.tfplan
+tfplan
+tfplan.json
+
+# Variable files that may hold sensitive values
+*.tfvars
+*.tfvars.json
+#!example.tfvars
+
+# Local override files
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# CLI config that may contain credentials
+.terraformrc
+terraform.rc
+
+# Secrets and keys
+.env
+.env.*
+*.pem
+*.key
+id_rsa*
+id_ed25519*
+
+# Editor and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
