@@ -236,7 +236,7 @@ tfplan.json
 # Variable files that may hold sensitive values
 *.tfvars
 *.tfvars.json
-#!example.tfvars
+!example.tfvars
 
 # Local override files
 override.tf
