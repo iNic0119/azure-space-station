@@ -4,7 +4,7 @@ resource "random_string" "suffix"{
     special = false
 }
 
-resource "Azurerm_storage_accounts" "data"{
+resource "azurerm_storage_accounts" "data"{
       name                              = "st${var.project}${random_string.suffix.result}"
       resource_group_name               = azurerm_resource_group.main.location
       account_tier                      = "Standard"
